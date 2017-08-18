@@ -15,8 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //设置视图根控制器
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let rootVC = LY_TabBarController()
+        window?.rootViewController = rootVC
+        window?.makeKeyAndVisible()
+        
+        
+        //统一设置导航栏
+        setupNavigationBar()
+        
         return true
+    }
+    
+    func setupNavigationBar(){
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().barStyle = .black
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

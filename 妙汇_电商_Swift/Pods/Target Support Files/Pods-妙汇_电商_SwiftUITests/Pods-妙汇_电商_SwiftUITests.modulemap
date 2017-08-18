@@ -1,0 +1,6 @@
+framework module Pods_______SwiftUITests {
+  umbrella header "Pods-妙汇_电商_SwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

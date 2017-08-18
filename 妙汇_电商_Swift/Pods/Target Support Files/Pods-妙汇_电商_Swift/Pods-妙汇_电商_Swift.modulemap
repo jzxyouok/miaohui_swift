@@ -1,0 +1,6 @@
+framework module Pods_______Swift {
+  umbrella header "Pods-妙汇_电商_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
